@@ -38,3 +38,4 @@ fabric.properties
 .Trash-*
 .nfs*
 build/
+node_modules/
