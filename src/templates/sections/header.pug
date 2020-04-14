@@ -1,0 +1,26 @@
+//- header
+header.header
+  section.header__top
+    .container
+      .contacts
+        a.contact.phone(href="tel:+4763373128")
+          i.fas.fa-mobile-alt.phone__icon
+          span.contact__text 63373128
+        a.contact.mail(href="mailto:info@business.co")
+          i.fas.fa-envelope.mail__icon
+          span.contact__text info@business.co
+        a.facebook(href="https://www.facebook.com/")
+          i.fab.fa-facebook-square.facebook__icon
+
+  .container
+    section.header__bottom
+      a.logo(href="#")
+        img.logo__picture(src="images/logo.png" alt="logo")
+      nav.header__nav
+        - const items = ["home", "about us", "our approach", "our work"]
+        each item in items
+          if item === "home"
+            a.nav__link.nav__link--active(href="#")= item
+          else
+            a.nav__link(href="#")= item
+      a.button.header__button.button--red(href="#")  free consultation

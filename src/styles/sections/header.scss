@@ -1,0 +1,99 @@
+.header {
+  &__top {
+    background-color: #f0f2f4;
+    border-bottom: #e2e2e2;
+  }
+
+  &__bottom {
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+//- top
+.contacts {
+  min-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact {
+  color: #424242;
+  text-decoration: none;
+  transition: 0.3s;
+  &:hover {
+    color: lighten(#424242, 20%);
+  }
+}
+
+.phone {
+  margin-right: 20px;
+  padding-right: 19px;
+  border-right: 1px solid #e2e2e2;
+  &__icon {
+    margin-right: 11px;
+  }
+}
+
+.mail {
+  margin-right: 12px;
+  &__icon {
+    margin-right: 8px;
+  }
+}
+
+.facebook {
+  &__icon {
+    font-size: 24px;
+    color: #1287bf;
+    transition: 0.3s;
+    &:hover {
+      color: lighten(#1287bf, 20%);
+    }
+  }
+}
+
+//- bottom
+.logo {
+  flex-basis: 42%;
+}
+
+.nav__link {
+  font-family: $ff-main-bold;
+  color: #424242;
+  transition: 0.3s;
+  text-transform: capitalize;
+  &:hover {
+    color: lighten(#424242, 20%);
+  }
+  &:not(:last-child) {
+    margin-right: 13px;
+    &:after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: #424242;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 13px;
+    }
+  }
+  &--active {
+    color: #de2b24;
+    transition: 0.3s;
+    &:hover {
+      color: lighten(#de2b24, 20%);
+    }
+  }
+}
+
+.header__button {
+  max-height: 36px;
+  font-family: $ff-main-bold;
+  text-transform: capitalize;
+  padding: 9px 22px;
+}

@@ -14,7 +14,7 @@ const autoprefixer = require('gulp-autoprefixer');
 gulp.task('server', function() {
 	browserSync.init({
 		server: {
-			port: 9000,
+			// port: 4000,
 			baseDir: "build"
 		}
 	});
