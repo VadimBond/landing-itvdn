@@ -1,0 +1,42 @@
+.about {
+  min-height: 540px;
+  padding: 100px 0 115px;
+  color: #424242;
+
+  &__subtitle {
+    margin-bottom: 45px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      width: 25%;
+      text-align: center;
+    }
+  }
+
+  &__header {
+    font-family: $ff-main-bold;
+    font-size: 22px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 13px;
+  }
+
+  &__descr {
+    font-size: 13.5px;
+    line-height: 22px;
+    color: #5c5c5c;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
