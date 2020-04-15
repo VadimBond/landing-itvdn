@@ -1,0 +1,104 @@
+.approach {
+  background-color: #f3f3f3;
+  padding: 90px 0 130px;
+  color: #424242;
+
+  &__subtitle {
+    margin-bottom: 45px;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    counter-reset: count;
+
+    &__item {
+      min-height: 236px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: -1px -1px 10px 1px rgba(214,214,214, 1);
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      &:nth-child(2n) {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+
+        .approach__text {
+          padding: 70px 90px 0 70px;
+        }
+
+        .approach__step {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    max-width: 339px;
+    max-height: 236px;
+  }
+
+  &__picture {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__step {
+    @include center-y();
+
+    position: absolute;
+    top: 62px;
+    left: 100%;
+
+    width: 103px;
+    height: 103px;
+    background-color: #de2b24;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    padding: 10px 30px;
+
+    &:before {
+      content: counter(count);
+      counter-increment: count;
+      display: block;
+      font-family: $ff-steps;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: top;
+    padding: 70px 70px 0 90px;
+    width: 66.4%;
+  }
+
+  &__header {
+    font-family: $ff-main-bold;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 13px;
+  }
+
+  &__descr {
+    font-size: 13.5px;
+    line-height: 22px;
+    color: #5c5c5c;
+    margin: 0;
+  }
+}
