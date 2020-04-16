@@ -1,0 +1,49 @@
+.work {
+  background-color: #de2b24;
+  padding: 110px 0 130px;
+  color: #fff;
+
+  &__subtitle {
+    margin-bottom: 45px;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 50%;
+      display: flex;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    background-color: #f35e59;
+    text-align: center;
+  }
+
+  &__icon {
+    margin: 29% auto 9%;
+  }
+
+  &__header {
+    font-family: $ff-main-bold;
+    font-size: 26px;
+    text-transform: capitalize;
+  }
+
+  &__descr {
+    font-family: $ff-main-bold;
+    font-size: 16px;
+  }
+
+  &__picture {
+    width: 50%;
+    max-height: 253px;
+    background-color: #111111;
+    object-fit: cover;
+  }
+}
