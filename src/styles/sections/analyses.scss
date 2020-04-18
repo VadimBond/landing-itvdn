@@ -1,0 +1,124 @@
+.analysis {
+  background-color: #1287bf;
+  padding: 100px 0 110px;
+  color: #fff;
+
+  &__subtitle {
+    margin-bottom: 18px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &__btn-down {
+    display: block;
+    width: 58px;
+    height: 58px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #1287bf;
+    margin: 0 auto 55px;
+
+    &:hover {
+      background-color: lighten(#1287bf, 10%);
+    }
+  }
+
+  &__icon {
+    font-size: 40px;
+  }
+
+  &-form {
+    position: relative;
+    max-width: 682px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    padding: 45px 60px 65px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -7%;
+      left: 45.5%;
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 30px solid #fff;
+    }
+
+    &__btn-close {
+      position: absolute;
+      top: -5%;
+      left: 96%;
+      width: 45px;
+      height: 45px;
+      background-color: #de2b24;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
+      font-size: 32px;
+
+      &:hover {
+        background-color: lighten(#de2b24, 10%);
+      }
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 22px;
+      color: #828282;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 35px;
+    }
+
+    &__btn-submit {
+      display: block;
+      font-family: $ff-main-bold;
+      font-size: 15px;
+      line-height: 1;
+      padding: 15px 30px;
+      border: none;
+      margin: 0 auto;
+    }
+  }
+}
+
+.input-group {
+  text-align: center;
+  &__input {
+    width: 79%;
+    min-height: 50px;
+    border: 1.0px solid #d8d8d8;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+
+    &:hover {
+      border: 1px solid #1287bf;
+    }
+
+    &:last-child {
+      margin-bottom: 35px;
+    }
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 14px;
+      color: #b0b0b0;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      font-size: 14px;
+      color: #b0b0b0;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      font-size: 14px;
+      color: #b0b0b0;
+    }
+  }
+}
