@@ -1,0 +1,116 @@
+.footer__top {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 90px 0 86px;
+}
+
+.footer-title {
+  font-family: $ff-main-bold;
+  font-size: 29px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.social-icons {
+  width: 25%;
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-container {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #515151;
+  transition: 0.3s;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border: 2px solid #de2b24;
+    background-color: lighten(#2a2a2a, 10%);
+  }
+}
+
+.social {
+  font-size: 23px;
+}
+
+.footer-form {
+  max-width: 66.7%;
+  margin: auto;
+
+  &__text {
+    font-size: 14px;
+    color: #cecece;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 54px;
+    background-color: #515151;
+    border: none;
+    margin-bottom: 28px;
+    padding-left: 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: lighten(#515151, 10%);
+    }
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #cecece;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #cecece;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #cecece;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: auto;
+    max-width: 149px;
+    max-height: 49px;
+    border: 2px solid #515151;
+    background-color: #2a2a2a;
+    font-family: $ff-main-bold;
+    font-size: 17px;
+    line-height: 1;
+    padding: 16px 32px;
+    transition: 0.3s;
+
+    &:hover {
+      border: 2px solid #de2b24;
+      background-color: lighten(#2a2a2a, 10%);
+    }
+  }
+}
+
+.footer__bottom {
+  min-height: 67px;
+  background-color: #515151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-copyright {
+    font-size: 14px;
+    color: #cecece;
+    margin: 0;
+  }
+}

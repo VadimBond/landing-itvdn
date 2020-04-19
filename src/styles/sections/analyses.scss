@@ -18,7 +18,8 @@
     border: 3px solid #fff;
     border-radius: 50%;
     background-color: #1287bf;
-    margin: 0 auto 55px;
+    margin: 0 auto 25px;
+    transition: 0.3s;
 
     &:hover {
       background-color: lighten(#1287bf, 10%);
@@ -29,11 +30,15 @@
     font-size: 40px;
   }
 
+  &-form-container {
+    padding-top: 30px;
+  }
+
   &-form {
     position: relative;
-    max-width: 682px;
+    max-width: 66.7%;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: auto;
     padding: 45px 60px 65px;
 
@@ -60,6 +65,7 @@
       border-radius: 50%;
       box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
       font-size: 32px;
+      transition: 0.3s;
 
       &:hover {
         background-color: lighten(#de2b24, 10%);
@@ -89,6 +95,8 @@
 
 .input-group {
   text-align: center;
+  margin-bottom: 35px;
+
   &__input {
     width: 79%;
     min-height: 50px;
@@ -96,28 +104,28 @@
     border-radius: 3px;
     margin-bottom: 10px;
     padding-left: 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: 0.3s;
 
     &:hover {
       border: 1px solid #1287bf;
     }
 
     &:last-child {
-      margin-bottom: 35px;
+      margin-bottom: 0;
     }
 
     &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-      font-size: 14px;
       color: #b0b0b0;
       opacity: 1; /* Firefox */
     }
 
     &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      font-size: 14px;
       color: #b0b0b0;
     }
 
     &::-ms-input-placeholder { /* Microsoft Edge */
-      font-size: 14px;
       color: #b0b0b0;
     }
   }
