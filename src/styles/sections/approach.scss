@@ -100,3 +100,13 @@
     color: #5c5c5c;
   }
 }
+
+// media
+@media (max-width: 576px) {
+  .container {
+    width: 96%;
+  }
+  .approach__step {
+    left: 50%;
+  }
+}

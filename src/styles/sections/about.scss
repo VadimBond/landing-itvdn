@@ -34,3 +34,17 @@
     margin: 0;
   }
 }
+
+// media
+@media (max-width: 576px) {
+  .container {
+    width: 96%;
+  }
+  .about-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item {
+      width: 60%;
+    }
+  }
+}
