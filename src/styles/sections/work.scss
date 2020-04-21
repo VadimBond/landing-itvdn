@@ -1,6 +1,6 @@
 .work {
   background-color: #de2b24;
-  padding: 110px 0 130px;
+  padding: 9.6% 0 11.4%;
   color: #fff;
 
   &__subtitle {
@@ -12,6 +12,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
 
     &__item {
       width: 50%;
@@ -45,5 +46,46 @@
     max-height: 253px;
     background-color: #111111;
     object-fit: cover;
+  }
+}
+
+// adaptive (desktop first)
+@media (max-width: 1100px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .work {
+    &-list {
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 96%;
+  }
+  .work {
+    &__icon {
+      margin: 4% auto;
+    }
+    &__header{
+      padding: 0 3%;
+    }
+    &__descr {
+      padding: 0 3%;
+    }
   }
 }

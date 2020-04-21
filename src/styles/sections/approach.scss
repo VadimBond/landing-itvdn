@@ -1,6 +1,6 @@
 .approach {
   background-color: #f3f3f3;
-  padding: 90px 0 130px;
+  padding: 7.5% 0 10.8%;
   color: #424242;
 
   &__subtitle {
@@ -26,13 +26,17 @@
         display: flex;
         flex-direction: row-reverse;
         text-align: right;
-
         .approach__text {
-          padding: 70px 90px 0 70px;
+          padding: 6.8% 8.6% 0 6.8%;
         }
-
         .approach__step {
           left: 0;
+        }
+        .approach__header {
+          margin-top: 0;
+        }
+        .approach__descr {
+          margin: 0;
         }
       }
     }
@@ -83,8 +87,8 @@
   &__text {
     display: inline-block;
     vertical-align: top;
-    padding: 70px 70px 0 90px;
-    width: 66.4%;
+    padding: 6.8% 6.8% 0 8.6%;
+    width: 64.2%;
   }
 
   &__header {
@@ -92,21 +96,91 @@
     font-size: 18px;
     line-height: 1;
     margin-bottom: 13px;
+    margin-top: 0;
   }
 
   &__descr {
     font-size: 13.5px;
     line-height: 22px;
     color: #5c5c5c;
+    margin: 0;
   }
 }
 
-// media
+// adaptive (desktop first)
+@media (max-width: 1100px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .approach {
+    &__text {
+      width: 52%;
+      padding: 5% 5% 0 8.6%;
+    }
+    &-list {
+      &__item {
+        &:nth-child(2n) {
+          .approach__text {
+            padding: 5% 8.6% 0 5%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .approach {
+    &__step {
+      display: none;
+    }
+    &__text {
+      padding: 3% 3% 0 3%;
+    }
+    &-list {
+      &__item {
+        display: flex;
+        &:nth-child(2n) {
+          .approach__text {
+            padding: 3% 3% 0 3%;
+          }
+        }
+      }
+    }
+    &__picture {
+      height: 100%;
+    }
+  }
+}
 @media (max-width: 576px) {
   .container {
     width: 96%;
   }
-  .approach__step {
-    left: 50%;
+  .approach {
+    &__text {
+      text-align: center;
+      width: 90%;
+      margin-bottom: 5%;
+    }
+    &-list {
+      &__item {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    &__image {
+      margin-top: 5%;
+      text-align: center;
+    }
+    &__picture {
+      width: 90%;
+    }
   }
 }

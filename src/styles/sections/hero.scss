@@ -1,6 +1,5 @@
 .hero {
-  min-height: 590px;
-  padding: 176px 0 236px;
+  padding: 15% 0 20%;
   background: #ccc url("../images/hero-bg.jpg") center / cover no-repeat;
   color: #fff;
   text-align: center;
@@ -26,7 +25,7 @@
 .hero__button {
   max-height: 69px;
   font-family: $ff-main-bold;
-  font-size: 23.5px;
+  font-size: 23px;
   line-height: 1;
-  padding: 25px 40px;
+  padding: 2% 3.3%;
 }
