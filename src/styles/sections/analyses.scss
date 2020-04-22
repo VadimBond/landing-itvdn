@@ -1,6 +1,6 @@
 .analysis {
   background-color: #1287bf;
-  padding: 100px 0 110px;
+  padding: 6.3% 0 7%;
   color: #fff;
 
   &__subtitle {
@@ -40,12 +40,12 @@
     background-color: #fff;
     border-radius: 3px;
     margin: auto;
-    padding: 45px 60px 65px;
+    padding: 4.3% 5.8% 6.3%;
 
     &:before {
       content: "";
       position: absolute;
-      top: -7%;
+      top: -6.4%;
       left: 45.5%;
       width: 0;
       height: 0;
@@ -127,6 +127,54 @@
 
     &::-ms-input-placeholder { /* Microsoft Edge */
       color: #b0b0b0;
+    }
+  }
+}
+
+// adaptive (desktop first)
+@media (max-width: 1100px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .analysis {
+    &-form {
+      max-width: 86%;
+      &:before {
+        left: 45%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .analysis {
+    &-form {
+      &:before {
+        left: 44%;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 96%;
+  }
+  .analysis {
+    &-form {
+      &:before {
+        display: none;
+      }
+      &__btn-close {
+        top: -4%;
+        left: 91%;
+      }
     }
   }
 }
