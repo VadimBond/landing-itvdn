@@ -8,18 +8,18 @@ header.header
         a.contact.mail(href="mailto:info@business.co")
           i.fas.fa-envelope.mail__icon
           span.contact__text info@business.co
-        a.facebook(href="https://www.facebook.com/")
+        a.facebook(href="https://www.facebook.com/" target="_blank")
           i.fab.fa-facebook-square.facebook__icon
 
   .container
-    section.header__bottom
-      a.logo(href="#")
+    section.header__bottom#home
+      a.logo(href="#home")
         img.logo__picture(src="images/logo.png" alt="logo")
       nav.header__nav
         - const items = ["home", "about us", "our approach", "our work"]
         each item in items
           if item === "home"
-            a.nav__link.nav__link--active(href="#")= item
+            a.nav__link.nav__link--active(href="#" + item.replace(/ /g, "_"))= item
           else
-            a.nav__link(href="#")= item
-      a.button.header__button.button--red(href="#")  free consultation
+            a.nav__link(href="#" + item.replace(/ /g, "_"))= item
+      a.button.header__button.button--red(href="#analysis")  free consultation
